@@ -31,3 +31,9 @@ app=QtWidgets.QApplication([])
 sistema = uic.loadUi('progeto_real.ui')
 sistema.show()
 app.exec()
+
+try:
+    sistema.btn_home.clicked.connect(lambda: sistema.pg_principal.setCurrentWidget(sistema.pg_home))
+    sistema.btn_tabela.clicked.connect(lambda: sistema.pg_principal.setCurrentWidget(sistema.pg_tabelas))
+except:
+    pass
