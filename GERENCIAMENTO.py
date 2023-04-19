@@ -25,7 +25,7 @@ import requests
 import json
 #import auto_py_to_exe
 import sys
-print('estou aprendendo a gerenciar repositorio!')
+
 
 app=QtWidgets.QApplication([])
 sistema = uic.loadUi('progeto_real.ui')
