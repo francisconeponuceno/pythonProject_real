@@ -28,15 +28,21 @@ import sys
 
 ############################################LOGIN#########################################################
 def logar():
+    try:
+        if login.txt01_usuario.text() == 'admin' and login.txt01_senha.text() == 'admin':
+           sistema.show()
+           login.close()
+    except:
+        'ERRO'
 
-    if login.txt01_usuario.text() == 'admin' and login.txt01_senha.text() == 'admin':
-       sistema.show()
-       login.close()
 
-
+############################################INFERCAFE GRÁFICA###############################################
 app=QtWidgets.QApplication([])
 sistema = uic.loadUi('progeto_real.ui')
 login = uic.loadUi('logalt.ui')
+
+
+############################################PAGINAS DO SISTEMA##############################################
 sistema.btn_home.clicked.connect(lambda: sistema.pg_mestre.setCurrentWidget(sistema.pg_home))
 sistema.btn_tabelas.clicked.connect(lambda: sistema.pg_mestre.setCurrentWidget(sistema.pg_tabelas))
 sistema.btn_cadastrar.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(sistema.pg_usuario))
