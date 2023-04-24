@@ -65,7 +65,7 @@
     <item>
      <widget class="QStackedWidget" name="pg_mestre">
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="pg_tabelas">
        <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -277,6 +277,46 @@
          </widget>
         </item>
        </layout>
+      </widget>
+      <widget class="QWidget" name="pg_sobre">
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>80</y>
+          <width>231</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>SOBRE</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pg_contatos">
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>120</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>CONTATOS</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="pg_home">
        <layout class="QVBoxLayout" name="verticalLayout">
