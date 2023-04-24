@@ -368,7 +368,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt_nome"/>
+           <widget class="QLineEdit" name="txt02_nome"/>
           </item>
          </layout>
         </item>
@@ -382,7 +382,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt_usuario"/>
+           <widget class="QLineEdit" name="txt02_usuario"/>
           </item>
          </layout>
         </item>
@@ -396,7 +396,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt_senha"/>
+           <widget class="QLineEdit" name="txt02_senha"/>
           </item>
          </layout>
         </item>
@@ -410,7 +410,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt_senha2"/>
+           <widget class="QLineEdit" name="txt02_senha2"/>
           </item>
          </layout>
         </item>
@@ -424,7 +424,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="cmb_perfil">
+           <widget class="QComboBox" name="cb02_perfil">
             <item>
              <property name="text">
               <string>ADMINISTRADOR</string>
@@ -432,7 +432,7 @@
             </item>
             <item>
              <property name="text">
-              <string>USUÁRIO</string>
+              <string>USUARIO</string>
              </property>
             </item>
            </widget>
@@ -449,7 +449,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="btn_cad_usuario">
+           <widget class="QPushButton" name="btn02_cadastrar">
             <property name="text">
              <string>CADASTRAR</string>
             </property>
@@ -478,7 +478,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btn_cadastrar">
+       <widget class="QPushButton" name="btn02_cad_usuario">
         <property name="text">
          <string>CADASTRAR USUARIO</string>
         </property>

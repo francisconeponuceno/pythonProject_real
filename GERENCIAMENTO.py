@@ -35,7 +35,43 @@ def logar():
     except:
         'ERRO'
 
-
+############################################CRIAR BANCO DE DADOS##########################################
+def cad_usuario():
+    try:
+        NOME = sistema.txt02_nome.text().strip()
+        USUARIO = sistema.txt02_usuario.text().strip()
+        SENHA = sistema.txt02_senha.text().strip()
+        SENHA2 = sistema.txt02_senha2.text().strip()
+        PERFIL = sistema.cb02_perfil.currentText().strip()
+        if USUARIO =='' or SENHA == '' or SENHA2 != SENHA:
+            msg = QMessageBox()
+            msg.setIcon(QMessageBox.Warning)
+            msg.setWindowTitle('ALERTA!')
+            msg.setInformativeText('USUÁRIO OU SENHA NÃO PODE FICAR VASIO,OU SENHA2 NÃO PODE SER DIFERENTE DE SENHA!')
+            msg.exec()
+            return None
+        else:
+            banco = sqlite3.connect('banco03.db')
+            cursor = banco.cursor()
+            cursor.execute(f"INSERT INTO tab_usuarios VALUES{NOME,USUARIO,SENHA,SENHA2,PERFIL}");
+            banco.commit()
+            msg = QMessageBox()
+            msg.setIcon(QMessageBox.Warning)
+            msg.setWindowTitle('ALERTA!')
+            msg.setInformativeText('USUÁRIO CADASTRADO COM SUCESSO!')
+            msg.exec()
+            banco.close()
+            sistema.txt02_nome.setText('')
+            sistema.txt02_usuario.setText('')
+            sistema.txt02_senha.setText('')
+            sistema.txt02_senha2.setText('')
+            sistema.txt02_nome.setFocus()
+    except:
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Warning)
+        msg.setWindowTitle('ALERTA!')
+        msg.setInformativeText('ERRO AO CADASTRAR USUÁRIO!')
+        msg.exec()
 ############################################INFERCAFE GRÁFICA###############################################
 app=QtWidgets.QApplication([])
 sistema = uic.loadUi('progeto_real.ui')
@@ -45,9 +81,18 @@ login = uic.loadUi('logalt.ui')
 ############################################PAGINAS DO SISTEMA##############################################
 sistema.btn_home.clicked.connect(lambda: sistema.pg_mestre.setCurrentWidget(sistema.pg_home))
 sistema.btn_tabelas.clicked.connect(lambda: sistema.pg_mestre.setCurrentWidget(sistema.pg_tabelas))
-sistema.btn_cadastrar.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(sistema.pg_usuario))
+sistema.btn02_cad_usuario.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(sistema.pg_usuario))
 sistema.btn_sobre.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(sistema.pg_sobre))
 sistema.btn_contatos.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(sistema.pg_contatos))
+
+
+############################################BOTÕES DA TELA DE LOGIN##########################################
 login.btn01_login.clicked.connect(logar)
+
+
+############################################BOTÕES DA TELA CADASTRO DE USUÁRIO###############################
+sistema.btn02_cadastrar.clicked.connect(cad_usuario)
+
+
 login.show()
 app.exec()
