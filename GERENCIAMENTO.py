@@ -26,14 +26,21 @@ import json
 #import auto_py_to_exe
 import sys
 
+############################################LOGIN#########################################################
+def logar():
+
+    if login.txt01_usuario.text() == 'admin' and login.txt01_senha.text() == 'admin':
+       sistema.show()
+       login.close()
+
 
 app=QtWidgets.QApplication([])
 sistema = uic.loadUi('progeto_real.ui')
-sistema.show()
-app.exec()
+login = uic.loadUi('logalt.ui')
+sistema.btn_home.clicked.connect(lambda: sistema.pg_mestre.setCurrentWidget(sistema.pg_home))
+sistema.btn_tabelas.clicked.connect(lambda: sistema.pg_mestre.setCurrentWidget(sistema.pg_tabelas))
+sistema.btn_cadastrar.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(sistema.pg_usuario))
 
-try:
-    sistema.btn_home.clicked.connect(lambda: sistema.pg_principal.setCurrentWidget(sistema.pg_home))
-    sistema.btn_tabela.clicked.connect(lambda: sistema.pg_principal.setCurrentWidget(sistema.pg_tabelas))
-except:
-    pass
+login.btn01_login.clicked.connect(logar)
+login.show()
+app.exec()
