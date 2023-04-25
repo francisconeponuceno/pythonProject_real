@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 10);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
@@ -26,13 +29,86 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QPushButton" name="btn_home">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color:rgb(255,255,255);
+border-radius: 1px;
+background-color: rgb(29, 88, 43);
+font-size 16px;
+}
+
+QPushButton:hover{
+background-color: #fff;color: black
+
+}</string>
+         </property>
          <property name="text">
           <string>HOME</string>
          </property>
         </widget>
        </item>
        <item>
+        <widget class="QPushButton" name="btn_pg_importar">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color:rgb(255,255,255);
+border-radius: 1px;
+background-color: rgb(29, 88, 43);
+font-size 16px;
+}
+
+QPushButton:hover{
+background-color: #fff;color: black
+
+}</string>
+         </property>
+         <property name="text">
+          <string>IMPORTAR</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="btn_tabelas">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color:rgb(255,255,255);
+border-radius: 1px;
+background-color: rgb(29, 88, 43);
+font-size 16px;
+}
+
+QPushButton:hover{
+background-color: #fff;color: black
+
+}</string>
+         </property>
          <property name="text">
           <string>TABELAS</string>
          </property>
@@ -40,6 +116,28 @@
        </item>
        <item>
         <widget class="QPushButton" name="btn_sobre">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color:rgb(255,255,255);
+border-radius: 1px;
+background-color: rgb(29, 88, 43);
+font-size 16px;
+}
+
+QPushButton:hover{
+background-color: #fff;color: black
+
+}</string>
+         </property>
          <property name="text">
           <string>SOBRE</string>
          </property>
@@ -47,15 +145,30 @@
        </item>
        <item>
         <widget class="QPushButton" name="btn_contatos">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color:rgb(255,255,255);
+border-radius: 1px;
+background-color: rgb(29, 88, 43);
+font-size 16px;
+}
+
+QPushButton:hover{
+background-color: #fff;color: black
+
+}</string>
+         </property>
          <property name="text">
           <string>CONTATOS</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btn_outros">
-         <property name="text">
-          <string>OUTROS</string>
          </property>
         </widget>
        </item>
@@ -64,8 +177,11 @@
     </item>
     <item>
      <widget class="QStackedWidget" name="pg_mestre">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(29, 88, 43);</string>
+      </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="pg_tabelas">
        <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -86,6 +202,9 @@
               </item>
               <item>
                <widget class="QPushButton" name="btn_abrir">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 255);</string>
+                </property>
                 <property name="text">
                  <string>ABRIR</string>
                 </property>
@@ -101,6 +220,9 @@
                  <layout class="QVBoxLayout" name="verticalLayout_5">
                   <item>
                    <widget class="QLabel" name="label_3">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);</string>
+                    </property>
                     <property name="text">
                      <string>ESTOQUE</string>
                     </property>
@@ -181,6 +303,9 @@
                  <layout class="QVBoxLayout" name="verticalLayout_4">
                   <item>
                    <widget class="QLabel" name="label_2">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);</string>
+                    </property>
                     <property name="text">
                      <string>SAÍDA</string>
                     </property>
@@ -230,6 +355,9 @@
                 <layout class="QVBoxLayout" name="verticalLayout_3">
                  <item>
                   <widget class="QPushButton" name="btn_importar">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);</string>
+                   </property>
                    <property name="text">
                     <string>IMPORTAR</string>
                    </property>
@@ -237,6 +365,9 @@
                  </item>
                  <item>
                   <widget class="QPushButton" name="pushButton_7">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);</string>
+                   </property>
                    <property name="text">
                     <string>GERAR SAÍDA</string>
                    </property>
@@ -244,6 +375,9 @@
                  </item>
                  <item>
                   <widget class="QPushButton" name="btn_estorno">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);</string>
+                   </property>
                    <property name="text">
                     <string>ESTORNO</string>
                    </property>
@@ -293,6 +427,9 @@
           <pointsize>20</pointsize>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
         <property name="text">
          <string>SOBRE</string>
         </property>
@@ -313,11 +450,15 @@
           <pointsize>20</pointsize>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
         <property name="text">
          <string>CONTATOS</string>
         </property>
        </widget>
       </widget>
+      <widget class="QWidget" name="pg_import"/>
       <widget class="QWidget" name="pg_home">
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
@@ -327,6 +468,16 @@
           </property>
           <property name="text">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#00503a;&quot;&gt;SISTEMA &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#00503a;&quot;&gt;DE GERENCIAMENTO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn02_cad_usuario">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>CADASTRAR USUARIO</string>
           </property>
          </widget>
         </item>
@@ -341,6 +492,9 @@
             <pointsize>20</pointsize>
            </font>
           </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
           <property name="text">
            <string>TELA DE CADASTRO</string>
           </property>
@@ -353,6 +507,9 @@
             <pointsize>11</pointsize>
            </font>
           </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
           <property name="text">
            <string>CADASTRAR USUÁRIO</string>
           </property>
@@ -360,64 +517,232 @@
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
           <item alignment="Qt::AlignLeft">
            <widget class="QLabel" name="label_8">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
             <property name="text">
              <string>NOME      </string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt02_nome"/>
+           <widget class="QLineEdit" name="txt02_nome">
+            <property name="styleSheet">
+             <string notr="true">color:rgba(211,239,251,1);
+border-bottom: 1px solid white;
+border-radius: None;
+background-color: rgba(85,115,155,0,1);
+font-family: Trebuchet MS;
+font-size: 21px;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
           <item alignment="Qt::AlignLeft">
            <widget class="QLabel" name="label_9">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
             <property name="text">
              <string>USUÁRIO</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt02_usuario"/>
+           <widget class="QLineEdit" name="txt02_usuario">
+            <property name="styleSheet">
+             <string notr="true">color:rgba(211,239,251,1);
+border-bottom: 1px solid white;
+border-radius: None;
+background-color: rgba(85,115,155,0,1);
+font-family: Trebuchet MS;
+font-size: 21px;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
           <item alignment="Qt::AlignLeft">
            <widget class="QLabel" name="label_10">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
             <property name="text">
              <string>SENHA    </string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt02_senha"/>
+           <widget class="QLineEdit" name="txt02_senha">
+            <property name="styleSheet">
+             <string notr="true">color:rgba(211,239,251,1);
+border-bottom: 1px solid white;
+border-radius: None;
+background-color: rgba(85,115,155,0,1);
+font-family: Trebuchet MS;
+font-size: 21px;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
           <item alignment="Qt::AlignLeft">
            <widget class="QLabel" name="label_11">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
             <property name="text">
              <string>SENHA2  </string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt02_senha2"/>
+           <widget class="QLineEdit" name="txt02_senha2">
+            <property name="styleSheet">
+             <string notr="true">color:rgba(211,239,251,1);
+border-bottom: 1px solid white;
+border-radius: None;
+background-color: rgba(85,115,155,0,1);
+font-family: Trebuchet MS;
+font-size: 21px;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_6">
           <item>
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
            <widget class="QLabel" name="label_12">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
             <property name="text">
              <string>PERFIL</string>
             </property>
@@ -425,6 +750,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="cb02_perfil">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
             <item>
              <property name="text">
               <string>ADMINISTRADOR</string>
@@ -436,6 +764,19 @@
              </property>
             </item>
            </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </item>
@@ -450,6 +791,9 @@
           </item>
           <item>
            <widget class="QPushButton" name="btn02_cadastrar">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
             <property name="text">
              <string>CADASTRAR</string>
             </property>
@@ -467,31 +811,6 @@
        </layout>
       </widget>
      </widget>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_4">
-      <item>
-       <widget class="QLabel" name="label_4">
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn02_cad_usuario">
-        <property name="text">
-         <string>CADASTRAR USUARIO</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_5">
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-     </layout>
     </item>
    </layout>
   </widget>
