@@ -39,18 +39,24 @@ def logar():
 #VALIDAR O LOGIN
 def cheklogin():
     try:
-        USUARIO = sistema.txt02_usuario.text.strip()
-        SENHA = sistema.txt02_senha.text.strip()
+        USUARIO = login.txt01_usuario.text().strip()
+        SENHA = login.txt01_senha.text().strip()
         banco = sqlite3.connect('banco03.db')
         cursor = banco.cursor()
         cursor.execute(f" SELECT * FROM tab_usuarios WHERE USUARIO = '{USUARIO}' AND SENHA = '{SENHA}'")
         RESP = cursor.fetchall()
-        if RESP[0][1] == USUARIO and RESP[0][2] == SENHA and RESP[0]
+        if RESP[0][1] == USUARIO and RESP[0][2] == SENHA and RESP[0][4] == 'ADMINISTRADOR':
+            login.close()
+            sistema.show()
+        if RESP[0][1] == USUARIO and RESP[0][2] == SENHA and RESP[0][4] == 'USUARIO':
+            login.close()
+            sistema.show()
+            sistema.btn02_cad_usuario.setVisible(False)
     except:
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Warning)
         msg.setWindowTitle('ALERTA!')
-        msg.setInformativeText('ERRO AO CADASTRAR USUÁRIO!')
+        msg.setInformativeText('USUÁRIO OU SENHA INVÁLIDA!')
         msg.exec()
 
 
@@ -106,7 +112,7 @@ sistema.btn_contatos.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(s
 
 
 ############################################BOTÕES DA TELA DE LOGIN##########################################
-login.btn01_login.clicked.connect(logar)
+login.btn01_login.clicked.connect(cheklogin)
 
 
 ############################################BOTÕES DA TELA CADASTRO DE USUÁRIO###############################
