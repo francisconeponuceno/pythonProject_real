@@ -35,6 +35,25 @@ def logar():
     except:
         'ERRO'
 
+
+#VALIDAR O LOGIN
+def cheklogin():
+    try:
+        USUARIO = sistema.txt02_usuario.text.strip()
+        SENHA = sistema.txt02_senha.text.strip()
+        banco = sqlite3.connect('banco03.db')
+        cursor = banco.cursor()
+        cursor.execute(f" SELECT * FROM tab_usuarios WHERE USUARIO = '{USUARIO}' AND SENHA = '{SENHA}'")
+        RESP = cursor.fetchall()
+        if RESP[0][1] == USUARIO and RESP[0][2] == SENHA and RESP[0]
+    except:
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Warning)
+        msg.setWindowTitle('ALERTA!')
+        msg.setInformativeText('ERRO AO CADASTRAR USUÁRIO!')
+        msg.exec()
+
+
 ############################################CRIAR BANCO DE DADOS##########################################
 def cad_usuario():
     try:
