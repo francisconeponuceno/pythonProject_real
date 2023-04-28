@@ -29,10 +29,10 @@
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; color:#ffffff;&quot;&gt;&lt;img src=&quot;C:\Users\Faturamento\PycharmProjects\pythonProject_real\imagens/user1.png&quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="pixmap">
-    <pixmap resource="icon.qrc">:/icon/user1.png</pixmap>
+    <pixmap resource="iconis.qrc">:/icones/user1.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -173,7 +173,6 @@ background-color: rgb(255, 255, 255);
  </widget>
  <resources>
   <include location="iconis.qrc"/>
-  <include location="icon.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -109,6 +109,7 @@ sistema.btn_tabelas.clicked.connect(lambda: sistema.pg_mestre.setCurrentWidget(s
 sistema.btn02_cad_usuario.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(sistema.pg_usuario))
 sistema.btn_sobre.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(sistema.pg_sobre))
 sistema.btn_contatos.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(sistema.pg_contatos))
+sistema.btn_pg_importar.clicked.connect(lambda:sistema.pg_mestre.setCurrentWidget(sistema.pg_import))
 
 
 ############################################BOTÕES DA TELA DE LOGIN##########################################
