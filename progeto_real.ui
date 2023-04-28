@@ -700,7 +700,7 @@ color: black
             <item>
              <widget class="QLabel" name="label_21">
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;(86)99952-0423&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;(86)99452-0423&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -1049,7 +1049,7 @@ color: black
              <string notr="true">color:rgba(211,239,251,1);
 border-bottom: 1px solid white;
 border-radius: None;
-background-color: rgba(85,115,155,0,1);
+background-color: rgba(29, 88, 43,0.0);
 font-family: Trebuchet MS;
 font-size: 21px;</string>
             </property>
@@ -1101,7 +1101,7 @@ font-size: 21px;</string>
              <string notr="true">color:rgba(211,239,251,1);
 border-bottom: 1px solid white;
 border-radius: None;
-background-color: rgba(85,115,155,0,1);
+background-color: rgba(29, 88, 43,0.0);
 font-family: Trebuchet MS;
 font-size: 21px;</string>
             </property>
@@ -1153,7 +1153,7 @@ font-size: 21px;</string>
              <string notr="true">color:rgba(211,239,251,1);
 border-bottom: 1px solid white;
 border-radius: None;
-background-color: rgba(85,115,155,0,1);
+background-color: rgba(29, 88, 43,0.0);
 font-family: Trebuchet MS;
 font-size: 21px;</string>
             </property>
@@ -1205,7 +1205,7 @@ font-size: 21px;</string>
              <string notr="true">color:rgba(211,239,251,1);
 border-bottom: 1px solid white;
 border-radius: None;
-background-color: rgba(85,115,155,0,1);
+background-color: rgba(29, 88, 43,0.0);
 font-family: Trebuchet MS;
 font-size: 21px;</string>
             </property>

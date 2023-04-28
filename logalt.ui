@@ -10,6 +10,18 @@
     <height>374</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>263</width>
+    <height>374</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>263</width>
+    <height>374</height>
+   </size>
+  </property>
   <property name="cursor">
    <cursorShape>PointingHandCursor</cursorShape>
   </property>
@@ -19,25 +31,6 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(29, 88, 43);</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>10</y>
-     <width>171</width>
-     <height>161</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; color:#ffffff;&quot;&gt;&lt;img src=&quot;C:\Users\Faturamento\PycharmProjects\pythonProject_real\imagens/user1.png&quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-   <property name="pixmap">
-    <pixmap resource="iconis.qrc">:/icones/user1.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
@@ -85,7 +78,7 @@
              <string notr="true">color:rgba(211,239,251,1);
 border-bottom: 1px solid white;
 border-radius: None;
-background-color: rgba(85,115,155,0,1);
+background-color: rgba(29, 88, 43,0.0);
 font-family: Trebuchet MS;
 font-size: 12px;</string>
             </property>
@@ -120,7 +113,7 @@ font-size: 12px;</string>
              <string notr="true">color:rgba(211,239,251,1);
 border-bottom: 1px solid white;
 border-radius: None;
-background-color: rgba(85,115,155,0,1);
+background-color: rgba(29, 88, 43,0.0);
 font-family: Trebuchet MS;
 font-size: 12px;</string>
             </property>
@@ -170,9 +163,22 @@ background-color: rgb(255, 255, 255);
     </item>
    </layout>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>211</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;&lt;img src=&quot;C:\Users\Faturamento\PycharmProjects\pythonProject_real\imagens/user1&quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>frame</zorder>
  </widget>
- <resources>
-  <include location="iconis.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
