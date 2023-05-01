@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>765</width>
-    <height>431</height>
+    <height>520</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -192,26 +192,9 @@ background-color: #fff;color: black
           </property>
           <widget class="QWidget" name="tab">
            <attribute name="title">
-            <string>Tab 1</string>
+            <string>BASE</string>
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_7">
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_2">
-              <item>
-               <widget class="QLineEdit" name="txt_file"/>
-              </item>
-              <item>
-               <widget class="QPushButton" name="btn_abrir">
-                <property name="styleSheet">
-                 <string notr="true">color: rgb(255, 255, 255);</string>
-                </property>
-                <property name="text">
-                 <string>ABRIR</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_3">
               <item>
@@ -224,7 +207,7 @@ background-color: #fff;color: black
                      <string notr="true">color: rgb(255, 255, 255);</string>
                     </property>
                     <property name="text">
-                     <string>ESTOQUE</string>
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;ESTOQUE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
                    </widget>
                   </item>
@@ -307,7 +290,7 @@ background-color: #fff;color: black
                      <string notr="true">color: rgb(255, 255, 255);</string>
                     </property>
                     <property name="text">
-                     <string>SAÍDA</string>
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;SAÍDA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
                    </widget>
                   </item>
@@ -354,19 +337,36 @@ background-color: #fff;color: black
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_3">
                  <item>
-                  <widget class="QPushButton" name="btn_importar">
-                   <property name="styleSheet">
-                    <string notr="true">color: rgb(255, 255, 255);</string>
-                   </property>
-                   <property name="text">
-                    <string>IMPORTAR</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
                   <widget class="QPushButton" name="pushButton_7">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>27</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="styleSheet">
-                    <string notr="true">color: rgb(255, 255, 255);</string>
+                    <string notr="true">QPushButton{
+color:rgb(10,0,2);
+border-radius: 10px;
+background-color:#fff;
+font-size 14px;
+}
+
+QPushButton:hover{
+background-color: rgb(85, 255, 127);
+color: black
+
+}
+</string>
                    </property>
                    <property name="text">
                     <string>GERAR SAÍDA</string>
@@ -375,11 +375,75 @@ background-color: #fff;color: black
                  </item>
                  <item>
                   <widget class="QPushButton" name="btn_estorno">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>27</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="styleSheet">
-                    <string notr="true">color: rgb(255, 255, 255);</string>
+                    <string notr="true">QPushButton{
+color:rgb(10,0,2);
+border-radius: 10px;
+background-color:#fff;
+font-size 14px;
+}
+
+QPushButton:hover{
+background-color: rgb(85, 255, 127);
+color: black
+
+}
+</string>
                    </property>
                    <property name="text">
                     <string>ESTORNO</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_importar">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>27</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+color:rgb(10,0,2);
+border-radius: 10px;
+background-color:#fff;
+font-size 14px;
+}
+
+QPushButton:hover{
+background-color: rgb(85, 255, 127);
+color: black
+
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>IMPORTAR</string>
                    </property>
                   </widget>
                  </item>
@@ -405,76 +469,515 @@ background-color: #fff;color: black
           </widget>
           <widget class="QWidget" name="tab_2">
            <attribute name="title">
-            <string>Tab 2</string>
+            <string>ESTOQUE</string>
            </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; color:#ffffff;&quot;&gt;ESTOQUE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+color:rgb(10,0,2);
+border-radius: 10px;
+background-color:#fff;
+font-size 14px;
+}
+
+QPushButton:hover{
+background-color: rgb(85, 255, 127);
+color: black
+
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>GERAR GRÁFICO</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_4">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+color:rgb(10,0,2);
+border-radius: 10px;
+background-color:#fff;
+font-size 14px;
+}
+
+QPushButton:hover{
+background-color: rgb(85, 255, 127);
+color: black
+
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>GERAR EXCEL</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_2">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>FILTRO</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableView" name="tableView"/>
+            </item>
+           </layout>
           </widget>
          </widget>
         </item>
        </layout>
       </widget>
       <widget class="QWidget" name="pg_sobre">
-       <widget class="QLabel" name="label_15">
-        <property name="geometry">
-         <rect>
-          <x>230</x>
-          <y>80</y>
-          <width>231</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>SOBRE</string>
-        </property>
-       </widget>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QLabel" name="label_15">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;SOBRE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;Este sistema faz a importação de arquivos XML e faz o controloe do estoque&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt; de acordo com a entrada de notas e saídas apontada pelo usuário.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="pg_contatos">
-       <widget class="QLabel" name="label_16">
-        <property name="geometry">
-         <rect>
-          <x>270</x>
-          <y>120</y>
-          <width>171</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>CONTATOS</string>
-        </property>
-       </widget>
+       <layout class="QVBoxLayout" name="verticalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_16">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;CONTATOS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;Desenvolvedor: Francisco Neponuceno&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="QLabel" name="label_23">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_24">
+              <property name="font">
+               <font>
+                <pointsize>7</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;img src=&quot;C:\Users\Faturamento\PycharmProjects\pythonProject_real\imagens/zapim&quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_21">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;(86)99452-0423&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_15">
+          <item>
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <spacer name="horizontalSpacer_14">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_25">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;&lt;img src=&quot;C:\Users\Faturamento\PycharmProjects\pythonProject_real\imagens/gmin&quot;l&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_22">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;franciscocan1986@gmail.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_13">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
       </widget>
-      <widget class="QWidget" name="pg_import"/>
+      <widget class="QWidget" name="pg_import">
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; color:#ffffff;&quot;&gt;IMPORTAR XML&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>selecione a pasta com os arquivos XML...-&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>27</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+color:rgb(10,0,2);
+border-top-right-radius: 15px;
+background-color:#fff;
+font-size 14px;
+}
+
+QPushButton:hover{
+background-color: rgb(85, 255, 127);
+color: black
+
+}
+</string>
+            </property>
+            <property name="text">
+             <string>ABRIR</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>27</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+color:rgb(10,0,2);
+border-radius: 10px;
+background-color:#fff;
+font-size 14px;
+}
+
+QPushButton:hover{
+background-color: rgb(85, 255, 127);
+color: black
+
+}
+</string>
+            </property>
+            <property name="text">
+             <string>IMPORTAR</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
       <widget class="QWidget" name="pg_home">
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <widget class="QLabel" name="label">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);</string>
+           <string notr="true">background-color: rgb(29, 88, 43);</string>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#00503a;&quot;&gt;SISTEMA &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#00503a;&quot;&gt;DE GERENCIAMENTO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ffffff;&quot;&gt;SISTEMA &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ffffff;&quot;&gt;DE GERENCIAMENTO&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;C:\Users\Faturamento\PycharmProjects\pythonProject_real\imagens/logo&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="btn02_cad_usuario">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
           <property name="styleSheet">
-           <string notr="true">color: rgb(255, 255, 255);</string>
+           <string notr="true">QPushButton{
+color:rgb(10,0,2);
+border-radius: 10px;
+background-color:#fff;
+font-size 14px;
+}
+
+QPushButton:hover{
+background-color: rgb(85, 255, 127);
+color: black
+
+}
+</string>
           </property>
           <property name="text">
            <string>CADASTRAR USUARIO</string>
@@ -496,7 +999,7 @@ background-color: #fff;color: black
            <string notr="true">color: rgb(255, 255, 255);</string>
           </property>
           <property name="text">
-           <string>TELA DE CADASTRO</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;TELA DE CADASTRO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
         </item>
@@ -511,7 +1014,7 @@ background-color: #fff;color: black
            <string notr="true">color: rgb(255, 255, 255);</string>
           </property>
           <property name="text">
-           <string>CADASTRAR USUÁRIO</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;C:\Users\Faturamento\PycharmProjects\pythonProject_real\imagens/user4&quot;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;CADASTRAR USUÁRIO&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
         </item>
@@ -536,7 +1039,7 @@ background-color: #fff;color: black
              <string notr="true">color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
-             <string>NOME      </string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;NOME     &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
@@ -546,7 +1049,7 @@ background-color: #fff;color: black
              <string notr="true">color:rgba(211,239,251,1);
 border-bottom: 1px solid white;
 border-radius: None;
-background-color: rgba(85,115,155,0,1);
+background-color: rgba(29, 88, 43,0.0);
 font-family: Trebuchet MS;
 font-size: 21px;</string>
             </property>
@@ -588,7 +1091,7 @@ font-size: 21px;</string>
              <string notr="true">color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
-             <string>USUÁRIO</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;USUÁRIO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
@@ -598,7 +1101,7 @@ font-size: 21px;</string>
              <string notr="true">color:rgba(211,239,251,1);
 border-bottom: 1px solid white;
 border-radius: None;
-background-color: rgba(85,115,155,0,1);
+background-color: rgba(29, 88, 43,0.0);
 font-family: Trebuchet MS;
 font-size: 21px;</string>
             </property>
@@ -640,7 +1143,7 @@ font-size: 21px;</string>
              <string notr="true">color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
-             <string>SENHA    </string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;SENHA    &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
@@ -650,7 +1153,7 @@ font-size: 21px;</string>
              <string notr="true">color:rgba(211,239,251,1);
 border-bottom: 1px solid white;
 border-radius: None;
-background-color: rgba(85,115,155,0,1);
+background-color: rgba(29, 88, 43,0.0);
 font-family: Trebuchet MS;
 font-size: 21px;</string>
             </property>
@@ -692,7 +1195,7 @@ font-size: 21px;</string>
              <string notr="true">color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
-             <string>SENHA2  </string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;SENHA2  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
@@ -702,7 +1205,7 @@ font-size: 21px;</string>
              <string notr="true">color:rgba(211,239,251,1);
 border-bottom: 1px solid white;
 border-radius: None;
-background-color: rgba(85,115,155,0,1);
+background-color: rgba(29, 88, 43,0.0);
 font-family: Trebuchet MS;
 font-size: 21px;</string>
             </property>
@@ -744,14 +1247,15 @@ font-size: 21px;</string>
              <string notr="true">color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
-             <string>PERFIL</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;PERFIL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="cb02_perfil">
             <property name="styleSheet">
-             <string notr="true">color: rgb(255, 255, 255);</string>
+             <string notr="true">color: rgb(255, 255, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
             </property>
             <item>
              <property name="text">
@@ -791,8 +1295,36 @@ font-size: 21px;</string>
           </item>
           <item>
            <widget class="QPushButton" name="btn02_cadastrar">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="styleSheet">
-             <string notr="true">color: rgb(255, 255, 255);</string>
+             <string notr="true">QPushButton{
+color:rgb(10,0,2);
+border-radius: 10px;
+background-color:#fff;
+font-size 14px;
+}
+
+QPushButton:hover{
+background-color: rgb(85, 255, 127);
+color: black
+
+}
+</string>
             </property>
             <property name="text">
              <string>CADASTRAR</string>
