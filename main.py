@@ -1,16 +1,40 @@
-# This is a sample Python script.
+import sys
+from cx_Freeze import setup, Executable
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+build_exe_options = {"packages":["barcode","reportlab","PyQt5","requests","num2words"]}
+
+base = None
+if sys.platform == 'win32':
+    base = 'win32GUI'
+executables = [
+    Executable('GERENCIAMENTO.py',base=base,icon='icon.png')
+]
+buildOptions = dict (
+    packages = ["barcode","reportlab","PyQt5","requests","num2words","pandas","matplotlib","xml","openpyxl"],
+    includes = [],
+    include_files = [
+    'gmail.png','gmin.png','icon.png','icons8-imposto-100.png','logo.png','user1.png','USER2.png',
+    'user3.png','user4.png','zap.png','zapim.png'],
+
+)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+#includeFiles = [
+    #'cadastrar.png','caixa2.png','carrinho.png','compras.png','cons_venda.png','contas.png','editar.png',
+    #'excluir.png','fecha.png','icone.ico','icons8-cardápio-64.png','icons8-comprimir-64.png',
+    #'icons8-maximize-32.png','impressora.png','login.png','login100x100.png','logo.jpg','novo.png','pagar.png','pesquisar.png',
+    #'produto.png','receber.png','recibo.png','salvar.png','usuarios.png'
+#]
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+setup(
+    name = 'SISTEMA DE GERENCIAMENTO',
+    version = '1.0',
+    description = 'SISTEMA DE GERENCIAMENTO',
+    options = dict(build_exe =  buildOptions),
+    executables=executables
+)
+
+
+

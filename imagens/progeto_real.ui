@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>SISTEMA DE GERENCIAMENTO</string>
+   <string>MainWindow</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(0, 0, 10);</string>
@@ -215,82 +215,67 @@ background-color: #fff;color: black
                    <widget class="QTreeWidget" name="tw_estoque">
                     <column>
                      <property name="text">
-                      <string>NFe</string>
+                      <string>NF-e</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>SERIE</string>
+                      <string>Série</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>DATA_EMISSAO</string>
+                      <string>Cliente</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>CHAVE</string>
+                      <string>Uf</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>CNPJ</string>
+                      <string>Municipio</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>EMITENTE</string>
+                      <string>Cod_item</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>VALOR_NF</string>
+                      <string>Qtd</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>ITEM</string>
+                      <string>Descrição</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>COD</string>
+                      <string>Uni</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>QNTD</string>
+                      <string>Espécie</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>DESCRIÇÃO</string>
+                      <string>Valor</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>UNI_MEDIDA</string>
+                      <string>Data_importação</string>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>VALOR_PRODUTO</string>
-                     </property>
-                    </column>
-                    <column>
-                     <property name="text">
-                      <string>DATA_IMPORTAÇÃO</string>
-                     </property>
-                    </column>
-                    <column>
-                     <property name="text">
-                      <string>USUÁRIO</string>
-                     </property>
-                    </column>
-                    <column>
-                     <property name="text">
-                      <string>DATA_SAÍDA</string>
+                      <string>Usuário</string>
                      </property>
                     </column>
                    </widget>
@@ -352,7 +337,7 @@ background-color: #fff;color: black
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_3">
                  <item>
-                  <widget class="QPushButton" name="btn_saida">
+                  <widget class="QPushButton" name="pushButton_7">
                    <property name="minimumSize">
                     <size>
                      <width>100</width>
@@ -463,78 +448,6 @@ color: black
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLineEdit" name="txt_saida">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
-                   <property name="minimumSize">
-                    <size>
-                     <width>100</width>
-                     <height>27</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>132</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>15</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">color: rgb(255, 255, 255);</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="placeholderText">
-                    <string>SAÍDA</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLineEdit" name="txt_estorno">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>27</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>132</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>15</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">color: rgb(255, 255, 255);</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="placeholderText">
-                    <string>ESTORNO</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
                   <spacer name="verticalSpacer">
                    <property name="orientation">
                     <enum>Qt::Vertical</enum>
@@ -556,20 +469,20 @@ color: black
           </widget>
           <widget class="QWidget" name="tab_2">
            <attribute name="title">
-            <string>GERAL</string>
+            <string>ESTOQUE</string>
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_11">
             <item>
              <widget class="QLabel" name="label_18">
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; color:#ffffff;&quot;&gt;TABELA GERAL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; color:#ffffff;&quot;&gt;ESTOQUE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_12">
               <item>
-               <widget class="QPushButton" name="btn_grafico">
+               <widget class="QPushButton" name="pushButton_3">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -607,7 +520,7 @@ color: black
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="btn_excel">
+               <widget class="QPushButton" name="pushButton_4">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -647,7 +560,7 @@ color: black
              </layout>
             </item>
             <item>
-             <widget class="QLineEdit" name="txt_filtro">
+             <widget class="QLineEdit" name="lineEdit_2">
               <property name="font">
                <font>
                 <family>Arial Black</family>
@@ -668,7 +581,7 @@ color: black
              </widget>
             </item>
             <item>
-             <widget class="QTableView" name="tw_geral"/>
+             <widget class="QTableView" name="tableView"/>
             </item>
            </layout>
           </widget>
@@ -1019,102 +932,19 @@ color: black
           </item>
          </layout>
         </item>
-        <item>
-         <widget class="QProgressBar" name="pbr_xml">
-          <property name="value">
-           <number>0</number>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="pg_home">
-       <layout class="QVBoxLayout" name="verticalLayout_15">
+       <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_14">
-          <item>
-           <widget class="QLabel" name="label">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(29, 88, 43);</string>
-            </property>
-            <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ffffff;&quot;&gt;SISTEMA &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ffffff;&quot;&gt;DE GERENCIAMENTO&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;C:\Users\Faturamento\PycharmProjects\pythonProject_real\imagens/logo&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QFrame" name="frame_3">
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout">
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_17">
-               <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_16">
-                 <item alignment="Qt::AlignLeft|Qt::AlignBottom">
-                  <widget class="QLabel" name="label_29">
-                   <property name="styleSheet">
-                    <string notr="true">color: rgb(255, 255, 255);</string>
-                   </property>
-                   <property name="text">
-                    <string>USUÁRIO LOGADO:</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignLeft|Qt::AlignBottom">
-                  <widget class="QLabel" name="lbl_usuario">
-                   <property name="styleSheet">
-                    <string notr="true">color: rgb(255, 255, 255);</string>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <spacer name="horizontalSpacer_15">
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>40</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                </layout>
-               </item>
-               <item alignment="Qt::AlignRight|Qt::AlignBottom">
-                <widget class="QLabel" name="lbl_data">
-                 <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-            </layout>
-           </widget>
-          </item>
-         </layout>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(29, 88, 43);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ffffff;&quot;&gt;SISTEMA &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ffffff;&quot;&gt;DE GERENCIAMENTO&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;C:\Users\Faturamento\PycharmProjects\pythonProject_real\imagens/logo&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
         </item>
         <item>
          <widget class="QPushButton" name="btn02_cad_usuario">
